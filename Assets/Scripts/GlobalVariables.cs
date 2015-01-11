@@ -31,8 +31,6 @@ public class GlobalVariables : MonoBehaviour {
 	public bool crawling;
 	public float crawlBugFix;
 
-	private Jump jump;
-
 
 	void Awake(){
 		
@@ -75,13 +73,13 @@ public class GlobalVariables : MonoBehaviour {
 
 		//TESTI
 		if(Input.GetKeyDown("j")){
-			IncreaseJumpHight();
+			Player.Instance.IncreaseJumpHight();
 		}
 	}
 
 	private void weltenseeleTeleport(){
 		if(Application.loadedLevelName == "Weltenseele"){
-//			updatePlayerData();
+			updatePlayerData();
 			changeScene(GlobalVariables.Instance.lastScene);
 		}else{
 			updatePlayerData();
@@ -152,14 +150,6 @@ public class GlobalVariables : MonoBehaviour {
 //		}
 	}
 
-	public void IncreaseJumpHight(){
 
-		Debug.Log(GameObject.FindWithTag("Player"));
-		Debug.Log(GameObject.FindWithTag("Player").GetComponent<MotionController>());
-		Debug.Log(GameObject.FindWithTag("Player").GetComponent<MotionController>().GetMotion(0,typeof(Jump)));
-
-		jump = (Jump)GameObject.FindWithTag("Player").GetComponent<MotionController>().GetMotion(0,typeof(Jump));
-		jump.Impulse = 50f;
-	}
 
 }

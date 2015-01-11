@@ -1946,6 +1946,14 @@ Prefab:
       propertyPath: m_TagString
       value: Hand
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 5fce93f7ea1b0f44785b090c210c4897, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 5fce93f7ea1b0f44785b090c210c4897, type: 3}
+    - target: {fileID: 100000, guid: 5fce93f7ea1b0f44785b090c210c4897, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fce93f7ea1b0f44785b090c210c4897, type: 3}
   m_RootGameObject: {fileID: 1686307706}
@@ -2606,13 +2614,14 @@ GameObject:
   - 95: {fileID: 1686307708}
   - 143: {fileID: 1686307709}
   - 114: {fileID: 1686307710}
+  - 114: {fileID: 1686307711}
   m_Layer: 0
   m_Name: ariadne_character
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1686307707
 Transform:
   m_ObjectHideFlags: 0
@@ -2670,7 +2679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _GUID: 
-  _CameraTransform: {fileID: 2022268418}
+  _CameraTransform: {fileID: 0}
   _CameraRig: {fileID: 0}
   _PlayerLayer: 8
   _UseInput: 1
@@ -2728,6 +2737,19 @@ MonoBehaviour:
     - '{, "Type" : "com.ootii.AI.Controllers.Sneak, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null", "Name" : "", "Priority" : "100", "IsEnabled"
       : "True", "ReactivationDelay" : "0"}'
+--- !u!114 &1686307711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1686307706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d89199ff44fe624891c586757200f78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camRig: {fileID: 0}
+  jumpHeightIncreased: 0
 --- !u!1 &1717697374
 GameObject:
   m_ObjectHideFlags: 0
@@ -3004,7 +3026,7 @@ Prefab:
     - target: {fileID: 11400000, guid: 98e83d176c7d85442981b891a5dbc630, type: 2}
       propertyPath: _Controller
       value: 
-      objectReference: {fileID: 1686307710}
+      objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 98e83d176c7d85442981b891a5dbc630, type: 2}
       propertyPath: _Anchor
       value: 
@@ -3033,6 +3055,10 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 98e83d176c7d85442981b891a5dbc630, type: 2}
+      propertyPath: _Camera
+      value: 
+      objectReference: {fileID: 489771648}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 98e83d176c7d85442981b891a5dbc630, type: 2}
   m_RootGameObject: {fileID: 2022268417}
@@ -3221,7 +3247,7 @@ MonoBehaviour:
   _GUID: 
   _IsLateUpdateEnabled: 0
   _Camera: {fileID: 489771648}
-  _Controller: {fileID: 1686307710}
+  _Controller: {fileID: 0}
   _UseSmoothMovement: 1
   _Distance: 3
   _InvertYAxis: 1
