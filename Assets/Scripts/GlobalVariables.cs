@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using com.ootii.AI.Controllers;
 
 //public struct PlayerData{
 //	public Vector3 position;
@@ -29,6 +30,8 @@ public class GlobalVariables : MonoBehaviour {
 	public bool inCrawlArea;
 	public bool crawling;
 	public float crawlBugFix;
+
+	private Jump jump;
 
 
 	void Awake(){
@@ -68,6 +71,11 @@ public class GlobalVariables : MonoBehaviour {
 		if(crawlBugFix >= 2f){
 			inCrawlArea = false;
 			crawlBugFix = 0f;
+		}
+
+		//TESTI
+		if(Input.GetKeyDown("j")){
+			IncreaseJumpHight();
 		}
 	}
 
@@ -142,6 +150,16 @@ public class GlobalVariables : MonoBehaviour {
 //		foreach(KeyValuePair<string, PlayerData> pData in playerDataPerScene){
 //			Debug.Log(pData.Key + ": " + pData.Value.position + ", " + pData.Value.rotation);
 //		}
+	}
+
+	public void IncreaseJumpHight(){
+
+		Debug.Log(GameObject.FindWithTag("Player"));
+		Debug.Log(GameObject.FindWithTag("Player").GetComponent<MotionController>());
+		Debug.Log(GameObject.FindWithTag("Player").GetComponent<MotionController>().GetMotion(0,typeof(Jump)));
+
+		jump = (Jump)GameObject.FindWithTag("Player").GetComponent<MotionController>().GetMotion(0,typeof(Jump));
+		jump.Impulse = 50f;
 	}
 
 }

@@ -6,14 +6,14 @@ public class Dialog : MonoBehaviour {
 
 	public int id;
 
-	public AudioSource audio;
+	public AudioSource audioS;
 
 	public float[] times; //in Sekunden
 	public string[] texts;
 	public int[] styles;
 	//(Kein Dictionary, da der sich nicht einfach im Editor bearbeiten lässt. Eine Klasse schien dafür etwas viel Overhead.)
 
-	public bool active;
+	public bool activated;
 	
 	public GUIStyle[] textStyles;
 
@@ -32,9 +32,9 @@ public class Dialog : MonoBehaviour {
 			Destroy(gameObject);
 		}
 
-		audio = GetComponent<AudioSource>();
+		audioS = GetComponent<AudioSource>();
 
-		if(audio.clip == null){
+		if(audioS.clip == null){
 			Debug.Log("Untertitel: Kein AudioClip vorhanden.");
 			Destroy(gameObject);
 		}
@@ -46,9 +46,9 @@ public class Dialog : MonoBehaviour {
 	
 
 	void OnGUI(){
-		if(active){
-			if(audio.isPlaying){
-				if(currentText < times.Length - 1 && audio.time > times[currentText+1]){
+		if(activated){
+			if(audioS.isPlaying){
+				if(currentText < times.Length - 1 && audioS.time > times[currentText+1]){
 					currentText++;
 				}
 				GUIStyle textStyle = textStyles[styles[currentText]];
@@ -65,24 +65,24 @@ public class Dialog : MonoBehaviour {
 	}
 
 	public void Activate(){
-		if(!active){
-			active = true;
-			audio.Play();
+		if(!activated){
+			activated = true;
+			audioS.Play();
 		}
 	}
 
 	public void DeactivatePause(){
-		if(active){
-			active = false;
-			audio.Pause();
+		if(activated){
+			activated = false;
+			audioS.Pause();
 		}
 	}
 
 	public void DeactivateReset(){
-		if(active){
-			active = false;
-			audio.Stop();
-			audio.time = 0f;
+		if(activated){
+			activated = false;
+			audioS.Stop();
+			audioS.time = 0f;
 			currentText = 0;
 		}
 	}
