@@ -5,6 +5,8 @@ using  UnityEngine.UI;
 
 public class StartGame : MonoBehaviour {
 
+	public string startLevel = "stadt";
+
 	public GameObject fortsetzenButton;
 	public GameObject startButton;
 
@@ -38,11 +40,11 @@ public class StartGame : MonoBehaviour {
 		PlayerPrefs.DeleteAll();
 		PlayerPrefs.SetInt("safeGame", 1);
 		player.SetActive(true);
-		Application.LoadLevel("stadt");
+		Application.LoadLevel(startLevel);
 	}
 
 	public void Continue(){
 		player.SetActive(true);
-		Application.LoadLevel("stadt");
+		Application.LoadLevel(startLevel);
 	}
 }
