@@ -12,6 +12,8 @@ public class Player : MonoBehaviour {
 	public float increasedJumpImpulse = 50f;
 	public bool jumpHeightIncreased;
 
+	private Jump jump;
+
 	void Awake(){
 		
 		if(Instance != null && Instance != this)
@@ -39,7 +41,7 @@ public class Player : MonoBehaviour {
 
 		Debug.Log(jumpHeightIncreased);
 		if(jumpHeightIncreased){
-			Jump jump = (Jump)GameObject.FindWithTag("Player").GetComponent<MotionController>().GetMotion(0,typeof(Jump));
+			jump = (Jump)GameObject.FindWithTag("Player").GetComponent<MotionController>().GetMotion(0,typeof(Jump));
 			jump.Impulse = increasedJumpImpulse;
 		}
 	}
@@ -55,6 +57,10 @@ public class Player : MonoBehaviour {
 		if(camRig._Controller == null){
 			camRig._Controller = GetComponent<MotionController>();
 		}
+//		if(jumpHeightIncreased && jump.Impulse < increasedJumpImpulse){
+//			jump = (Jump)GameObject.FindWithTag("Player").GetComponent<MotionController>().GetMotion(0,typeof(Jump));
+//			jump.Impulse = increasedJumpImpulse;
+//		}
 	}
 
 	public void IncreaseJumpHight(){
@@ -63,7 +69,7 @@ public class Player : MonoBehaviour {
 		Debug.Log(GameObject.FindWithTag("Player").GetComponent<MotionController>());
 		Debug.Log(GameObject.FindWithTag("Player").GetComponent<MotionController>().GetMotion(0,typeof(Jump)));
 		
-		Jump jump = (Jump)GameObject.FindWithTag("Player").GetComponent<MotionController>().GetMotion(0,typeof(Jump));
+		jump = (Jump)GameObject.FindWithTag("Player").GetComponent<MotionController>().GetMotion(0,typeof(Jump));
 		jump.Impulse = increasedJumpImpulse;
 	}
 }

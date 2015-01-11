@@ -54,7 +54,7 @@ public class GlobalVariables : MonoBehaviour {
 //		Debug.Log(player.transform.position.x);
 
 		playerDataPerScene = new Dictionary<string, PlayerData>();
-		currentScene = "Stadt";
+//		currentScene = "stadt";
 		load();
 	}
 	
@@ -80,6 +80,7 @@ public class GlobalVariables : MonoBehaviour {
 		//TESTI
 		if(Input.GetKeyDown("j")){
 			Player.Instance.IncreaseJumpHight();
+			Player.Instance.jumpHeightIncreased = true;
 		}
 	}
 
@@ -104,8 +105,8 @@ public class GlobalVariables : MonoBehaviour {
 		currentScene = PlayerPrefs.GetString("CurrentScene");
 		lastScene = PlayerPrefs.GetString("LastScene");
 
-		if(currentScene == "") currentScene = "Stadt";
-		if(lastScene == "") lastScene = "Stadt";
+		if(currentScene == "") currentScene = "stadt";
+		if(lastScene == "") lastScene = "stadt";
 		
 		if(PlayerPrefs.GetInt("Crawling") != 0)	crawling = true;
 
