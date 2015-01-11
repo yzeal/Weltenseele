@@ -64,6 +64,12 @@ public class GlobalVariables : MonoBehaviour {
 		if(Input.GetButton("Weltenseele")){
 			weltenseeleTeleport();			
 		}
+
+		if(Input.GetButton("resetCamera")){
+//			GameObject.FindWithTag("MainCameraRig").transform.position = player.transform.position - 1f * player.transform.forward;
+			GameObject camRig = GameObject.FindWithTag("MainCameraRig");
+			camRig.transform.position = player.transform.position - 2f * player.transform.forward + 1.2f * Vector3.up;
+		}
 		
 		crawlBugFix += Time.deltaTime;
 		if(crawlBugFix >= 2f){
