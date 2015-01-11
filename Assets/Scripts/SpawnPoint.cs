@@ -47,7 +47,7 @@ public class SpawnPoint : MonoBehaviour {
 			GameObject.FindWithTag("MainCameraRig").transform.position = transform.position - 20f * player.transform.forward;
 
 			if(GlobalVariables.Instance.autoSave) GlobalVariables.Instance.save();
-		}else{
+		}else {
 //			PlayerData pd = GlobalVariables.Instance.playerDataPerScene[Application.loadedLevelName];
 //
 //			GameObject player = GameObject.FindWithTag("Player");

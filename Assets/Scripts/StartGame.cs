@@ -12,6 +12,13 @@ public class StartGame : MonoBehaviour {
 
 	public EventSystem eS;
 
+	private GameObject player;
+
+	void Awake(){
+		player = GameObject.FindWithTag("Player");
+		player.SetActive(false);
+	}
+
 	// Use this for initialization
 	void Start () {
 //		Application.LoadLevel("stadt");
@@ -30,10 +37,12 @@ public class StartGame : MonoBehaviour {
 	public void NewGame(){
 		PlayerPrefs.DeleteAll();
 		PlayerPrefs.SetInt("safeGame", 1);
+		player.SetActive(true);
 		Application.LoadLevel("stadt");
 	}
 
 	public void Continue(){
+		player.SetActive(true);
 		Application.LoadLevel("stadt");
 	}
 }

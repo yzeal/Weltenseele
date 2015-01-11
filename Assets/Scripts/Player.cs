@@ -9,6 +9,7 @@ public class Player : MonoBehaviour {
 
 	public AdventureRig camRig;
 
+	public float increasedJumpImpulse = 50f;
 	public bool jumpHeightIncreased;
 
 	void Awake(){
@@ -39,7 +40,7 @@ public class Player : MonoBehaviour {
 		Debug.Log(jumpHeightIncreased);
 		if(jumpHeightIncreased){
 			Jump jump = (Jump)GameObject.FindWithTag("Player").GetComponent<MotionController>().GetMotion(0,typeof(Jump));
-			jump.Impulse = 50f;
+			jump.Impulse = increasedJumpImpulse;
 		}
 	}
 
@@ -63,6 +64,6 @@ public class Player : MonoBehaviour {
 		Debug.Log(GameObject.FindWithTag("Player").GetComponent<MotionController>().GetMotion(0,typeof(Jump)));
 		
 		Jump jump = (Jump)GameObject.FindWithTag("Player").GetComponent<MotionController>().GetMotion(0,typeof(Jump));
-		jump.Impulse = 50f;
+		jump.Impulse = increasedJumpImpulse;
 	}
 }
