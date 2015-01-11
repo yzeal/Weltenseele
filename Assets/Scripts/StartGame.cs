@@ -38,6 +38,7 @@ public class StartGame : MonoBehaviour {
 
 	public void NewGame(){
 		PlayerPrefs.DeleteAll();
+		GlobalVariables.Instance.load();
 		PlayerPrefs.SetInt("safeGame", 1);
 		player.SetActive(true);
 		Application.LoadLevel(startLevel);

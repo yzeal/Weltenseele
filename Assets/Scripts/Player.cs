@@ -43,6 +43,7 @@ public class Player : MonoBehaviour {
 		if(jumpHeightIncreased){
 			jump = (Jump)GameObject.FindWithTag("Player").GetComponent<MotionController>().GetMotion(0,typeof(Jump));
 			jump.Impulse = increasedJumpImpulse;
+			jumpHeightIncreased = true;
 		}
 	}
 
@@ -60,6 +61,7 @@ public class Player : MonoBehaviour {
 //		if(jumpHeightIncreased && jump.Impulse < increasedJumpImpulse){
 //			jump = (Jump)GameObject.FindWithTag("Player").GetComponent<MotionController>().GetMotion(0,typeof(Jump));
 //			jump.Impulse = increasedJumpImpulse;
+//			jumpHeightIncreased = true;
 //		}
 	}
 
@@ -71,5 +73,8 @@ public class Player : MonoBehaviour {
 		
 		jump = (Jump)GameObject.FindWithTag("Player").GetComponent<MotionController>().GetMotion(0,typeof(Jump));
 		jump.Impulse = increasedJumpImpulse;
+		jumpHeightIncreased = true;
+
+		if(GlobalVariables.Instance.autoSave) GlobalVariables.Instance.save();
 	}
 }

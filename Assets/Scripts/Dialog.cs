@@ -20,6 +20,9 @@ public class Dialog : MonoBehaviour {
 	private int currentText = 0;
 	private Texture2D schwarz;
 
+	public bool followPlayer;
+	private GameObject player;
+
 
 	void Start () {
 
@@ -42,6 +45,8 @@ public class Dialog : MonoBehaviour {
 		schwarz = new Texture2D(1,1);
 		schwarz.SetPixel(0,0, new Color(0f,0f,0f,0.5f));
 		schwarz.Apply();
+
+		player = GameObject.FindWithTag("Player");
 	}
 	
 
@@ -61,6 +66,12 @@ public class Dialog : MonoBehaviour {
 					PlayerPrefs.SetInt(Application.loadedLevelName + "Subtitle" + id, 1);
 				Destroy(gameObject);
 			}
+		}
+	}
+
+	void Update(){
+		if(followPlayer){
+			transform.position = player.transform.position;
 		}
 	}
 

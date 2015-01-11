@@ -55,6 +55,10 @@ public class GlobalVariables : MonoBehaviour {
 
 		playerDataPerScene = new Dictionary<string, PlayerData>();
 //		currentScene = "stadt";
+//		load();
+	}
+
+	void Start(){
 		load();
 	}
 	
@@ -63,6 +67,11 @@ public class GlobalVariables : MonoBehaviour {
 	void Update () {
 		if(Input.GetButton("Weltenseele")){
 			weltenseeleTeleport();			
+		}
+
+		if(Input.GetButton("mainMenu")){
+			if(autoSave) save();
+			Application.LoadLevel("start");
 		}
 
 		if(Input.GetButton("resetCamera")){
@@ -108,7 +117,16 @@ public class GlobalVariables : MonoBehaviour {
 		if(currentScene == "") currentScene = "stadt";
 		if(lastScene == "") lastScene = "stadt";
 		
-		if(PlayerPrefs.GetInt("Crawling") != 0)	crawling = true;
+		if(PlayerPrefs.GetInt("Crawling") != 0){	
+			crawling = true;
+		}else{
+			crawling = false;
+		}
+		if(PlayerPrefs.GetInt("IncreasedJumpHight") != 0 && Player.Instance != null){
+			Player.Instance.jumpHeightIncreased = true;
+		}else{
+			Player.Instance.jumpHeightIncreased = false;
+		}
 
 	}
 
@@ -116,10 +134,19 @@ public class GlobalVariables : MonoBehaviour {
 
 		PlayerPrefs.SetString("CurrentScene", currentScene);
 		PlayerPrefs.SetString("LastScene", lastScene);
+
+		if(Player.Instance.jumpHeightIncreased){
+			PlayerPrefs.SetInt("IncreasedJumpHight", 1);
+			Debug.Log("jump height saved");
+		}
 		
 		if(crawling){
 			PlayerPrefs.SetInt("Crawling", 1);
 		}
+
+		Debug.Log("game saved");
+
+		updatePlayerData();
 
 	}
 
@@ -131,14 +158,23 @@ public class GlobalVariables : MonoBehaviour {
 
 	public void updatePlayerData(){
 
-		PlayerPrefs.SetFloat("PlayerPosX", player.transform.position.x);
-		PlayerPrefs.SetFloat("PlayerPosY", player.transform.position.y);
-		PlayerPrefs.SetFloat("PlayerPosZ", player.transform.position.z);
+//		PlayerPrefs.SetFloat("PlayerPosX", player.transform.position.x);
+//		PlayerPrefs.SetFloat("PlayerPosY", player.transform.position.y);
+//		PlayerPrefs.SetFloat("PlayerPosZ", player.transform.position.z);
+//
+//		PlayerPrefs.SetFloat("PlayerRotX", player.transform.rotation.x);
+//		PlayerPrefs.SetFloat("PlayerRotY", player.transform.rotation.y);
+//		PlayerPrefs.SetFloat("PlayerRotZ", player.transform.rotation.z);
+//		PlayerPrefs.SetFloat("PlayerRotW", player.transform.rotation.w);
 
-		PlayerPrefs.SetFloat("PlayerRotX", player.transform.rotation.x);
-		PlayerPrefs.SetFloat("PlayerRotY", player.transform.rotation.y);
-		PlayerPrefs.SetFloat("PlayerRotZ", player.transform.rotation.z);
-		PlayerPrefs.SetFloat("PlayerRotW", player.transform.rotation.w);
+		PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerPosX", player.transform.position.x);
+		PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerPosY", player.transform.position.y);
+		PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerPosZ", player.transform.position.z);
+		
+		PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerRotX", player.transform.rotation.x);
+		PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerRotY", player.transform.rotation.y);
+		PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerRotZ", player.transform.rotation.z);
+		PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerRotW", player.transform.rotation.w);
 
 		Debug.Log(Application.loadedLevelName + " Player X: " + PlayerPrefs.GetFloat("PlayerPosX"));
 //

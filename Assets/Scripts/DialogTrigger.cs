@@ -8,7 +8,7 @@ public class DialogTrigger : MonoBehaviour {
 
 
 	void Start () {
-		handler = GameObject.Find("DialogHandler").GetComponent<DialogHandler>();
+		handler = GameObject.Find("Monologe").GetComponent<DialogHandler>();
 	}
 
 	void OnTriggerEnter(Collider other){

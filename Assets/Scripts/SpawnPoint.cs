@@ -24,9 +24,9 @@ public class SpawnPoint : MonoBehaviour {
 
 		Vector3 newPos = new Vector3();
 
-		newPos.x = PlayerPrefs.GetFloat("PlayerPosX");
-		newPos.y = PlayerPrefs.GetFloat("PlayerPosY");
-		newPos.z = PlayerPrefs.GetFloat("PlayerPosZ");
+		newPos.x = PlayerPrefs.GetFloat(Application.loadedLevelName + "PlayerPosX");
+		newPos.y = PlayerPrefs.GetFloat(Application.loadedLevelName + "PlayerPosY");
+		newPos.z = PlayerPrefs.GetFloat(Application.loadedLevelName + "PlayerPosZ");
 
 		Debug.Log(Application.loadedLevelName + " Player X SpawPoint: " + PlayerPrefs.GetFloat("PlayerPosX"));
 
@@ -34,10 +34,10 @@ public class SpawnPoint : MonoBehaviour {
 
 		Quaternion newRot = new Quaternion();
 
-		newRot.x = PlayerPrefs.GetFloat("PlayerRotX");
-		newRot.y = PlayerPrefs.GetFloat("PlayerRotY");
-		newRot.z = PlayerPrefs.GetFloat("PlayerRotZ");
-		newRot.w = PlayerPrefs.GetFloat("PlayerRotW");
+		newRot.x = PlayerPrefs.GetFloat(Application.loadedLevelName + "PlayerRotX");
+		newRot.y = PlayerPrefs.GetFloat(Application.loadedLevelName + "PlayerRotY");
+		newRot.z = PlayerPrefs.GetFloat(Application.loadedLevelName + "PlayerRotZ");
+		newRot.w = PlayerPrefs.GetFloat(Application.loadedLevelName + "PlayerRotW");
 
 //		if(!GlobalVariables.Instance.playerDataPerScene.ContainsKey(Application.loadedLevelName)){
 		if(newPos == Vector3.zero || Application.loadedLevelName == "Weltenseele"){
