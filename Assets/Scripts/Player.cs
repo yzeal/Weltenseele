@@ -15,6 +15,8 @@ public class Player : MonoBehaviour {
 
 	private Jump jump;
 
+	public bool killed;
+
 	void Awake(){
 		
 		if(Instance != null && Instance != this)
@@ -35,6 +37,8 @@ public class Player : MonoBehaviour {
 	}
 
 	void OnLevelWasLoaded(){
+		killed = false;
+		GetComponent<MotionController>().enabled = true;
 		camRig = GameObject.FindWithTag("MainCameraRig").GetComponent<AdventureRig>();
 		camRig._Controller = GetComponent<MotionController>();
 		GetComponent<MotionController>()._CameraRig = camRig;
@@ -61,11 +65,11 @@ public class Player : MonoBehaviour {
 		if(camRig._Controller == null){
 			camRig._Controller = GetComponent<MotionController>();
 		}
-//		if(jumpHeightIncreased && jump.Impulse < increasedJumpImpulse){
-//			jump = (Jump)GameObject.FindWithTag("Player").GetComponent<MotionController>().GetMotion(0,typeof(Jump));
-//			jump.Impulse = increasedJumpImpulse;
-//			jumpHeightIncreased = true;
-//		}
+		if(jumpHeightIncreased && jump.Impulse < increasedJumpImpulse){
+			jump = (Jump)GameObject.FindWithTag("Player").GetComponent<MotionController>().GetMotion(0,typeof(Jump));
+			jump.Impulse = increasedJumpImpulse;
+			jumpHeightIncreased = true;
+		}
 	}
 
 	public void IncreaseJumpHight(){

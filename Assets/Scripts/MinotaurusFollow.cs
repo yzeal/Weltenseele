@@ -90,6 +90,7 @@ public class MinotaurusFollow : MonoBehaviour {
 
 	void OnCollisionEnter(Collision other){
 		if(other.gameObject.CompareTag("Player")){
+			Player.Instance.killed = true;
 			grargh.Play();
 			if(!IsInvoking("kill")){
 				if(soundTest != null && soundTest.isPlaying){
@@ -104,6 +105,7 @@ public class MinotaurusFollow : MonoBehaviour {
 
 	private void kill(){
 		Application.LoadLevel(GlobalVariables.Instance.currentScene);
+//		GlobalVariables.Instance.changeScene(GlobalVariables.Instance.currentScene);
 	}
 	
 	public void inRange(){
