@@ -907,8 +907,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camRig: {fileID: 0}
-  originalJumpImpulse: 31
-  increasedJumpImpulse: 50
+  originalJumpImpulse: 25
+  increasedJumpImpulse: 37
   jumpHeightIncreased: 0
   killed: 0
 --- !u!114 &642249003
@@ -958,7 +958,7 @@ MonoBehaviour:
       "RotationMin" : "1", "RotationSpeed" : "360"}'
     - '{, "Type" : "com.ootii.AI.Controllers.Jump, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null", "Name" : "", "Priority" : "10", "IsEnabled"
-      : "True", "ReactivationDelay" : "0", "Impulse" : "31", "MomentumEnabled" : "True",
+      : "True", "ReactivationDelay" : "0", "Impulse" : "25", "MomentumEnabled" : "True",
       "ControlEnabled" : "True", "MovementSpeed" : "5", "RotationMin" : "1", "RotationSpeed"
       : "360"}'
     - '{, "Type" : "com.ootii.AI.Controllers.ClimbCrouch, Assembly-CSharp, Version=0.0.0.0,
