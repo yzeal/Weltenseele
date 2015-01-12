@@ -46,6 +46,7 @@ public class StartGame : MonoBehaviour {
 
 	public void Continue(){
 		player.SetActive(true);
+		player.GetComponent<Player>().enabled = true;
 //		Application.LoadLevel(startLevel);
 		Application.LoadLevel(GlobalVariables.Instance.currentScene);
 	}

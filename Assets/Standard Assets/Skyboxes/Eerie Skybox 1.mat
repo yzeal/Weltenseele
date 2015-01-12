@@ -24,42 +24,42 @@ Material:
         first:
           name: _FrontTex
         second:
-          m_Texture: {fileID: 2800000, guid: e7a88268a460f384cbef52d988810865, type: 3}
+          m_Texture: {fileID: 2800000, guid: 851d4b8088ecdd14e9cc1c1fba2029c8, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _BackTex
         second:
-          m_Texture: {fileID: 2800000, guid: 661663e7fa00ae64fa29cf54677bbef4, type: 3}
+          m_Texture: {fileID: 2800000, guid: 08daf86c721753244b582e141f89fc39, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _LeftTex
         second:
-          m_Texture: {fileID: 2800000, guid: 956c1c0113bcd4c4388a3c239be09820, type: 3}
+          m_Texture: {fileID: 2800000, guid: 54203318730e03c4ea95259581f9592a, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _RightTex
         second:
-          m_Texture: {fileID: 2800000, guid: 67de91b5513a4d8489588fb65de75caa, type: 3}
+          m_Texture: {fileID: 2800000, guid: aa9827b804024f24d9e367e582d4e139, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _UpTex
         second:
-          m_Texture: {fileID: 2800000, guid: 2c93b54a9ce1c314b809b4c11cf9cdb6, type: 3}
+          m_Texture: {fileID: 2800000, guid: 55abd19c4ab444e41b2e1ea78082ceb5, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _DownTex
         second:
-          m_Texture: {fileID: 2800000, guid: 8ca0735e520b5fc40a4e41b42fc288ea, type: 3}
+          m_Texture: {fileID: 2800000, guid: 1ff360088e6ce72408643885affcfd27, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats: {}
@@ -71,7 +71,7 @@ Material:
       data:
         first:
           name: _Tint
-        second: {r: 1, g: .775456369, b: .602941155, a: 1}
+        second: {r: .654411793, g: .524856865, b: .360888839, a: 1}
 --- !u!1002 &2100001
 EditorExtensionImpl:
   serializedVersion: 6

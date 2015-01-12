@@ -910,6 +910,7 @@ MonoBehaviour:
   originalJumpImpulse: 31
   increasedJumpImpulse: 50
   jumpHeightIncreased: 0
+  killed: 0
 --- !u!114 &642249003
 MonoBehaviour:
   m_ObjectHideFlags: 0

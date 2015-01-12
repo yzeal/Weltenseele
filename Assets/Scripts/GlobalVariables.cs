@@ -32,6 +32,8 @@ public class GlobalVariables : MonoBehaviour {
 	public float crawlBugFix;
 
 
+
+
 	void Awake(){
 		
 		if(Instance != null && Instance != this)
@@ -91,6 +93,7 @@ public class GlobalVariables : MonoBehaviour {
 			Player.Instance.IncreaseJumpHight();
 			Player.Instance.jumpHeightIncreased = true;
 		}
+
 	}
 
 	private void weltenseeleTeleport(){
@@ -107,6 +110,9 @@ public class GlobalVariables : MonoBehaviour {
 
 	void OnLevelWasLoaded(){
 		player = GameObject.FindWithTag("Player");
+		if(player != null){
+			player.GetComponent<Player>().enabled = true;
+		}
 		
 		inCrawlArea = false;
 		crawlBugFix = 0f;
@@ -169,7 +175,7 @@ public class GlobalVariables : MonoBehaviour {
 //		PlayerPrefs.SetFloat("PlayerRotY", player.transform.rotation.y);
 //		PlayerPrefs.SetFloat("PlayerRotZ", player.transform.rotation.z);
 //		PlayerPrefs.SetFloat("PlayerRotW", player.transform.rotation.w);
-		if(Player.Instance.GetComponent<MotionController>().IsGrounded){
+		if(Player.Instance.GetComponent<MotionController>().IsGrounded && !Player.Instance.killed){
 
 			PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerPosX", player.transform.position.x);
 			PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerPosY", player.transform.position.y);
