@@ -339,7 +339,7 @@ Skybox:
   m_PrefabInternal: {fileID: 1896261202}
   m_GameObject: {fileID: 489771644}
   m_Enabled: 1
-  m_CustomSkybox: {fileID: 2100000, guid: 16522f49031ff414abdf1f83f1b6a36c, type: 2}
+  m_CustomSkybox: {fileID: 2100000, guid: 4af1b4a102703644fadad94c8b7c9b31, type: 2}
 --- !u!1 &707160916
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,17 +518,17 @@ Light:
   m_Enabled: 1
   serializedVersion: 3
   m_Type: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: .875, g: .8040061, b: .714154422, a: 1}
   m_Intensity: .5
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
-    m_Strength: 1
+    m_Strength: .400000006
     m_Bias: .0500000007
-    m_Softness: 4
+    m_Softness: 8
     m_SoftnessFade: 1
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
@@ -965,7 +965,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 98e83d176c7d85442981b891a5dbc630, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 98e83d176c7d85442981b891a5dbc630, type: 2}
       propertyPath: _Controller
@@ -999,6 +999,10 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4500000, guid: 98e83d176c7d85442981b891a5dbc630, type: 2}
+      propertyPath: m_CustomSkybox
+      value: 
+      objectReference: {fileID: 2100000, guid: 4af1b4a102703644fadad94c8b7c9b31, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 98e83d176c7d85442981b891a5dbc630, type: 2}
   m_RootGameObject: {fileID: 2022268417}

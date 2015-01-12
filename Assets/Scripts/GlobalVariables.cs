@@ -94,12 +94,14 @@ public class GlobalVariables : MonoBehaviour {
 	}
 
 	private void weltenseeleTeleport(){
-		if(Application.loadedLevelName == "Weltenseele"){
-			updatePlayerData();
-			changeScene(GlobalVariables.Instance.lastScene);
-		}else{
-			updatePlayerData();
-			changeScene("Weltenseele");
+		if(Player.Instance.GetComponent<MotionController>().IsGrounded){
+			if(Application.loadedLevelName == "Weltenseele"){
+				updatePlayerData();
+				changeScene(GlobalVariables.Instance.lastScene);
+			}else{
+				updatePlayerData();
+				changeScene("Weltenseele");
+			}
 		}
 	}
 
@@ -126,6 +128,7 @@ public class GlobalVariables : MonoBehaviour {
 			Player.Instance.jumpHeightIncreased = true;
 		}else{
 			Player.Instance.jumpHeightIncreased = false;
+//			Player.Instance.DecreaseJumpHeight();
 		}
 
 	}
@@ -166,17 +169,19 @@ public class GlobalVariables : MonoBehaviour {
 //		PlayerPrefs.SetFloat("PlayerRotY", player.transform.rotation.y);
 //		PlayerPrefs.SetFloat("PlayerRotZ", player.transform.rotation.z);
 //		PlayerPrefs.SetFloat("PlayerRotW", player.transform.rotation.w);
+		if(Player.Instance.GetComponent<MotionController>().IsGrounded){
 
-		PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerPosX", player.transform.position.x);
-		PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerPosY", player.transform.position.y);
-		PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerPosZ", player.transform.position.z);
-		
-		PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerRotX", player.transform.rotation.x);
-		PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerRotY", player.transform.rotation.y);
-		PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerRotZ", player.transform.rotation.z);
-		PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerRotW", player.transform.rotation.w);
+			PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerPosX", player.transform.position.x);
+			PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerPosY", player.transform.position.y);
+			PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerPosZ", player.transform.position.z);
+			
+			PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerRotX", player.transform.rotation.x);
+			PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerRotY", player.transform.rotation.y);
+			PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerRotZ", player.transform.rotation.z);
+			PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerRotW", player.transform.rotation.w);
 
-		Debug.Log(Application.loadedLevelName + " Player X: " + PlayerPrefs.GetFloat("PlayerPosX"));
+			Debug.Log("Position saved.");
+		}
 //
 //		PlayerData pd = new PlayerData();
 //		pd.position = player.transform.position;

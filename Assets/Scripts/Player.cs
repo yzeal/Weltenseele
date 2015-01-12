@@ -9,6 +9,7 @@ public class Player : MonoBehaviour {
 
 	public AdventureRig camRig;
 
+	public float originalJumpImpulse = 31f;
 	public float increasedJumpImpulse = 50f;
 	public bool jumpHeightIncreased;
 
@@ -44,6 +45,8 @@ public class Player : MonoBehaviour {
 			jump = (Jump)GameObject.FindWithTag("Player").GetComponent<MotionController>().GetMotion(0,typeof(Jump));
 			jump.Impulse = increasedJumpImpulse;
 			jumpHeightIncreased = true;
+		}else{
+			DecreaseJumpHeight();
 		}
 	}
 
@@ -67,14 +70,19 @@ public class Player : MonoBehaviour {
 
 	public void IncreaseJumpHight(){
 		
-		Debug.Log(GameObject.FindWithTag("Player"));
-		Debug.Log(GameObject.FindWithTag("Player").GetComponent<MotionController>());
-		Debug.Log(GameObject.FindWithTag("Player").GetComponent<MotionController>().GetMotion(0,typeof(Jump)));
-		
 		jump = (Jump)GameObject.FindWithTag("Player").GetComponent<MotionController>().GetMotion(0,typeof(Jump));
 		jump.Impulse = increasedJumpImpulse;
 		jumpHeightIncreased = true;
 
+		if(GlobalVariables.Instance.autoSave) GlobalVariables.Instance.save();
+	}
+
+	public void DecreaseJumpHeight(){
+		
+		jump = (Jump)GameObject.FindWithTag("Player").GetComponent<MotionController>().GetMotion(0,typeof(Jump));
+		jump.Impulse = originalJumpImpulse;
+		jumpHeightIncreased = false;
+		
 		if(GlobalVariables.Instance.autoSave) GlobalVariables.Instance.save();
 	}
 }

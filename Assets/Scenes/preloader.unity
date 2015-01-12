@@ -907,6 +907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camRig: {fileID: 0}
+  originalJumpImpulse: 31
   increasedJumpImpulse: 50
   jumpHeightIncreased: 0
 --- !u!114 &642249003
@@ -2101,7 +2102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f12ca9f970c968f49b818f0607971e87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deleteProgressAtStart: 0
+  deleteProgressAtStart: 1
   autoSave: 1
   currentScene: 
   lastScene: 
