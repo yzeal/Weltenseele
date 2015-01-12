@@ -13,3 +13,5 @@ EditorBuildSettings:
     path: Assets/Scenes/stadt.unity
   - enabled: 1
     path: Assets/Scenes/Weltenseele.unity
+  - enabled: 1
+    path: Assets/Scenes/stadtlevel.unity
