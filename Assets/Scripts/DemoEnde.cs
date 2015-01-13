@@ -24,10 +24,9 @@ public class DemoEnde : MonoBehaviour {
 	}
 
 	public void Ende(){
-		Application.LoadLevel("start");
 		MotionController mc = Player.Instance.GetComponent<MotionController>();
 		mc.UseInput = true;
-		Application.Quit();
+		GlobalVariables.Instance.EndDemo();
 		Destroy(gameObject);
 	}
 }

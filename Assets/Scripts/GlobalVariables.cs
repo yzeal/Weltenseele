@@ -122,8 +122,8 @@ public class GlobalVariables : MonoBehaviour {
 		currentScene = PlayerPrefs.GetString("CurrentScene");
 		lastScene = PlayerPrefs.GetString("LastScene");
 
-		if(currentScene == "") currentScene = "stadt";
-		if(lastScene == "") lastScene = "stadt";
+		if(currentScene == "") currentScene = "stadtlevel";
+		if(lastScene == "") lastScene = "stadtlevel";
 		
 		if(PlayerPrefs.GetInt("Crawling") != 0){	
 			crawling = true;
@@ -204,6 +204,9 @@ public class GlobalVariables : MonoBehaviour {
 //		}
 	}
 
-
+	public void EndDemo(){
+//		Application.LoadLevel("start");
+		Application.Quit();
+	}
 
 }

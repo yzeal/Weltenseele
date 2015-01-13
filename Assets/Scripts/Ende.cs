@@ -5,6 +5,8 @@ public class Ende : MonoBehaviour {
 
 	public GameObject message;
 
+	private bool ende;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -16,6 +18,9 @@ public class Ende : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(){
-		Instantiate(message);
+		if(!ende){
+			ende = true;
+			Instantiate(message);
+		}
 	}
 }
