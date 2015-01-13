@@ -31,6 +31,7 @@ public class Minimap : MonoBehaviour {
 //		playerImage.position = new Vector3(Screen.width - 50f + player.transform.position.x/2f, player.transform.position.z/2f + 50f, 0f);
 //		playerImage.anchoredPosition = new Vector2(Screen.width/2f - 50f + player.transform.position.x/2f, player.transform.position.z/2f + 50f);
 		playerImage.anchoredPosition = new Vector2(-player.transform.position.x*0.2f*1.5f, -player.transform.position.z*0.3f*1.5f);
-		playerImage.localRotation = new Quaternion(playerImage.localRotation.x, playerImage.localRotation.y, player.transform.localRotation.y, playerImage.rotation.w);
+
+		playerImage.localRotation = new Quaternion(playerImage.localRotation.x, playerImage.localRotation.y, player.transform.rotation.y, playerImage.localRotation.w);
 	}
 }
