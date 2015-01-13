@@ -12646,6 +12646,10 @@ Prefab:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 90d4c06252b53764eaf92b5e0318f3f5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cc48fdb92c9d5fb43a67821b85d40cc1, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90d4c06252b53764eaf92b5e0318f3f5, type: 3}
   m_RootGameObject: {fileID: 1198784891}
@@ -12826,7 +12830,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 83477323ee0c68445bf0d7f2b1b45986, type: 2}
+  - {fileID: 2100000, guid: cc48fdb92c9d5fb43a67821b85d40cc1, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
