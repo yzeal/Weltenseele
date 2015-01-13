@@ -22,8 +22,8 @@ public class PickupItem : MonoBehaviour {
 	}
 
 	public void Drop(){
-		SphereCollider[] sc = GetComponents<SphereCollider>();
-		foreach(SphereCollider sphereCol in sc){
+		MeshCollider[] sc = GetComponents<MeshCollider>();
+		foreach(MeshCollider sphereCol in sc){
 			sphereCol.enabled = true;
 		}
 		transform.parent = null;
@@ -36,8 +36,8 @@ public class PickupItem : MonoBehaviour {
 			transform.position = hand.transform.position;
 			transform.parent = hand.transform;
 			rigidbody.isKinematic = true;
-			SphereCollider[] sc = GetComponents<SphereCollider>();
-			foreach(SphereCollider sphereCol in sc){
+			MeshCollider[] sc = GetComponents<MeshCollider>();
+			foreach(MeshCollider sphereCol in sc){
 				sphereCol.enabled = false;
 			}
 		}
