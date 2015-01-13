@@ -8,6 +8,8 @@ public class PickupItem : MonoBehaviour {
 
 	private bool pickedUp;
 
+
+
 	// Use this for initialization
 	void Start () {
 //		player = GameObject.FindWithTag("Player");
