@@ -17,8 +17,8 @@ public class Ende : MonoBehaviour {
 	
 	}
 
-	void OnTriggerEnter(){
-		if(!ende){
+	void OnTriggerEnter(Collider other){
+		if(!ende && other.CompareTag("Player")){
 			ende = true;
 			Instantiate(message);
 		}
