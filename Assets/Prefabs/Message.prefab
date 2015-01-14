@@ -272,8 +272,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Du hast den sanguinisch-luftigen Zirkel gefunden!\n\nDu kannst nun h\xF6her
-    springen."
+  m_Text: "Du hast den sanguinischen Trasformationszirkel gefunden!\n\nDu kannst nun
+    h\xF6her springen."
 --- !u!114 &11448638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -459,8 +459,8 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -2.29999995, y: -125.900002}
-  m_SizeDelta: {x: 32.2999992, y: 30}
+  m_AnchoredPosition: {x: -5.72199997e-06, y: -80.4000015}
+  m_SizeDelta: {x: 86, y: 84.5999985}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22448632
 RectTransform:

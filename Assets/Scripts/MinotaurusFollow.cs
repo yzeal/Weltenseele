@@ -11,7 +11,7 @@ public class MinotaurusFollow : MonoBehaviour {
 	
 	private GameObject player;	
 	
-	private NavMeshAgent agent;
+	public NavMeshAgent agent;
 	public bool followCharacter;
 	private bool seenByCharacter;
 	public AudioSource soundTest;
@@ -23,24 +23,24 @@ public class MinotaurusFollow : MonoBehaviour {
 	private Vector3 startPosition;
 
 	private bool glowing;
-	public Texture schwarz;
-	private Texture glowy;
-	private Material mat;
+//	public Texture schwarz;
+//	private Texture glowy;
+//	private Material mat;
 
     void Start() {
 		player = GameObject.FindWithTag("Player");
         agent = GetComponent<NavMeshAgent>();
 		startPosition = transform.position;
-
+		Debug.Log(agent);
 		seenByCharacter = false;
 
 		agent.speed = GlobalVariables.Instance.minotaurusSpeed;
 
-		mat = GetComponentInChildren<MeshRenderer>().material;
+//		mat = GetComponentInChildren<MeshRenderer>().material;
 
-		glowy = mat.GetTexture("_Illum");
+//		glowy = mat.GetTexture("_Illum");
 
-		mat.SetTexture("_Illum", schwarz);
+//		mat.SetTexture("_Illum", schwarz);
     }
 	
     void Update() {
@@ -65,7 +65,7 @@ public class MinotaurusFollow : MonoBehaviour {
 				agent.SetDestination(player.transform.position);
 				if(!glowing){
 					glowing = true;
-					mat.SetTexture("_Illum", glowy);
+//					mat.SetTexture("_Illum", glowy);
 				}
 			}else{
 				if(soundTest.isPlaying){
@@ -74,7 +74,7 @@ public class MinotaurusFollow : MonoBehaviour {
 				agent.SetDestination(transform.position);
 				if(glowing){
 					glowing = false;
-					mat.SetTexture("_Illum", schwarz);
+//					mat.SetTexture("_Illum", schwarz);
 				}
 			}        	
 		}
@@ -105,7 +105,6 @@ public class MinotaurusFollow : MonoBehaviour {
 
 	private void kill(){
 		Application.LoadLevel(GlobalVariables.Instance.currentScene);
-//		GlobalVariables.Instance.changeScene(GlobalVariables.Instance.currentScene);
 	}
 	
 	public void inRange(){
@@ -124,7 +123,8 @@ public class MinotaurusFollow : MonoBehaviour {
 
 		followCharacter = false;
 
-		if(returnToStartPosition){		
+		if(returnToStartPosition){	
+			Debug.Log(agent);
 			agent.SetDestination(startPosition);
 		}
 
