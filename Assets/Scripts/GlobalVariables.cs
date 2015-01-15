@@ -56,7 +56,7 @@ public class GlobalVariables : MonoBehaviour {
 //		Debug.Log(player.transform.position.x);
 
 		playerDataPerScene = new Dictionary<string, PlayerData>();
-//		currentScene = "stadt";
+//		currentScene = "stadtlevel2";
 //		load();
 	}
 
@@ -122,8 +122,8 @@ public class GlobalVariables : MonoBehaviour {
 		currentScene = PlayerPrefs.GetString("CurrentScene");
 		lastScene = PlayerPrefs.GetString("LastScene");
 
-		if(currentScene == "") currentScene = "stadtlevel";
-		if(lastScene == "") lastScene = "stadtlevel";
+		if(currentScene == "") currentScene = "stadtlevel2";
+		if(lastScene == "") lastScene = "stadtlevel2";
 		
 		if(PlayerPrefs.GetInt("Crawling") != 0){	
 			crawling = true;
@@ -186,7 +186,7 @@ public class GlobalVariables : MonoBehaviour {
 			PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerRotZ", player.transform.rotation.z);
 			PlayerPrefs.SetFloat(Application.loadedLevelName + "PlayerRotW", player.transform.rotation.w);
 
-			Debug.Log("Position saved.");
+			Debug.Log(Application.loadedLevelName + "PlayerPos Position saved: " + player.transform.position);
 		}
 //
 //		PlayerData pd = new PlayerData();

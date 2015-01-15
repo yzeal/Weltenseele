@@ -31,7 +31,7 @@ public class MinotaurusFollow : MonoBehaviour {
 		player = GameObject.FindWithTag("Player");
         agent = GetComponent<NavMeshAgent>();
 		startPosition = transform.position;
-		Debug.Log(agent);
+//		Debug.Log(agent);
 		seenByCharacter = false;
 
 		agent.speed = GlobalVariables.Instance.minotaurusSpeed;
@@ -123,8 +123,7 @@ public class MinotaurusFollow : MonoBehaviour {
 
 		followCharacter = false;
 
-		if(returnToStartPosition){	
-			Debug.Log(agent);
+		if(returnToStartPosition){
 			agent.SetDestination(startPosition);
 		}
 

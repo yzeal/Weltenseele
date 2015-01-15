@@ -13,7 +13,7 @@ public class SpawnPoint : MonoBehaviour {
 //	public GameObject mainCameraRig;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 
 //		Debug.Log("PD Start");
 //		foreach(KeyValuePair<string, PlayerData> pData in GlobalVariables.Instance.playerDataPerScene){
@@ -65,7 +65,7 @@ public class SpawnPoint : MonoBehaviour {
 			GameObject.FindWithTag("MainCameraRig").transform.position = newPos - 20f * player.transform.forward;
 
 			if(GlobalVariables.Instance.autoSave) GlobalVariables.Instance.save();
-			Debug.Log("Gespeicherte Position.");
+			Debug.Log(Application.loadedLevelName + "PlayerRotX  Gespeicherte Position.  " + newPos);
 		}
 
 	}

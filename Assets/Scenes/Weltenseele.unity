@@ -449,6 +449,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: bdffbd936703a6548ac100fbdb25f30d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bdffbd936703a6548ac100fbdb25f30d, type: 3}
   m_RootGameObject: {fileID: 1602127094}
@@ -685,7 +689,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1602127095
 Transform:
   m_ObjectHideFlags: 0
@@ -857,10 +861,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seeAngle: 180
   returnToStartPosition: 1
+  agent: {fileID: 0}
   followCharacter: 0
   soundTest: {fileID: 1602127099}
   grargh: {fileID: 1602127096}
-  schwarz: {fileID: 2800000, guid: 427ff48b098658742bdcce953d607e78, type: 3}
 --- !u!195 &1602127101
 NavMeshAgent:
   m_ObjectHideFlags: 0

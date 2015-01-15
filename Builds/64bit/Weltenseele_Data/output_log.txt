@@ -1,0 +1,279 @@
+Initialize engine version: 4.6.1f1 (d1db7a1b5196)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dumx.dll 9.18.13.2702]
+    Renderer: NVIDIA GeForce GT 425M   
+    Vendor:   NVIDIA
+    VRAM:     978 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Unitiy\Jahresthema\Weltenseele\Builds\64bit\Weltenseele_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Unitiy\Jahresthema\Weltenseele\Builds\64bit\Weltenseele_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Unitiy\Jahresthema\Weltenseele\Builds\64bit\Weltenseele_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading D:\Unitiy\Jahresthema\Weltenseele\Builds\64bit\Weltenseele_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: D:\Unitiy\Jahresthema\Weltenseele\Builds\64bit\Weltenseele_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Unitiy\Jahresthema\Weltenseele\Builds\64bit\Weltenseele_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Unitiy\Jahresthema\Weltenseele\Builds\64bit\Weltenseele_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Unitiy\Jahresthema\Weltenseele\Builds\64bit\Weltenseele_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.113 seconds
+desktop: 1024x768 60Hz; virtual: 1024x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: D:\Unitiy\Jahresthema\Weltenseele\Builds\64bit\Weltenseele_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Unitiy\Jahresthema\Weltenseele\Builds\64bit\Weltenseele_Data\Managed\System.dll (this message is harmless)
+NullReferenceException: Object reference not set to an instance of an object
+  at Player.Awake () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at com.ootii.AI.Controllers.Jump.DetermineVelocity () [0x00000] in <filename unknown>:0 
+  at com.ootii.AI.Controllers.Jump.UpdateMotion () [0x00000] in <filename unknown>:0 
+  at com.ootii.AI.Controllers.Fall.UpdateMotion () [0x00000] in <filename unknown>:0 
+  at com.ootii.AI.Controllers.MotionControllerLayer.UpdateMotions () [0x00000] in <filename unknown>:0 
+  at com.ootii.AI.Controllers.MotionController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnloadTime: 0.196609 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2822.
+Total: 2.490786 ms (FindLiveObjects: 0.307351 ms CreateObjectMapping: 0.060996 ms MarkObjects: 0.746170 ms  DeleteObjects: 0.170553 ms)
+
+UnloadTime: 12.882687 ms
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2466)
+
+HDR RenderTexture format is not supported on this platform. This camera will render without HDR buffers.
+ 
+(Filename:  Line: 2468)
+
+stadtlevel2 Player X SpawPoint: 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+newPos: (0.0, 0.0, 0.0)
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+SpawnPoint-Position
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+game saved
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 1898.
+Total: 3.023765 ms (FindLiveObjects: 0.135613 ms CreateObjectMapping: 0.062180 ms MarkObjects: 0.797691 ms  DeleteObjects: 0.830854 ms)
+
+False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+game saved
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+180
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Untertitel: Vorbei.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Untertitel: Vorbei.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 7.613303 ms
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2466)
+
+HDR RenderTexture format is not supported on this platform. This camera will render without HDR buffers.
+ 
+(Filename:  Line: 2468)
+
+stadtlevel2 Player X SpawPoint: 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+newPos: (0.0, 0.0, 0.0)
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+SpawnPoint-Position
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+game saved
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1906.
+Total: 7.782672 ms (FindLiveObjects: 0.190095 ms CreateObjectMapping: 0.100081 ms MarkObjects: 5.995417 ms  DeleteObjects: 0.040861 ms)
+
+False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+game saved
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+stadtlevel2PlayerPos Position saved: (-3.9, 1.2, -9.6)
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+180
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+stadtlevel2PlayerPos Position saved: (-3.6, 0.3, -31.4)
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 5.233258 ms
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2466)
+
+HDR RenderTexture format is not supported on this platform. This camera will render without HDR buffers.
+ 
+(Filename:  Line: 2468)
+
+Weltenseele Player X SpawPoint: 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+newPos: (0.0, 0.0, 0.0)
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+SpawnPoint-Position
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+game saved
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+WeltenseelePlayerPos Position saved: (980.0, 1.0, 972.0)
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 164 unused Assets to reduce memory usage. Loaded Objects now: 484.
+Total: 11.464371 ms (FindLiveObjects: 0.048560 ms CreateObjectMapping: 0.055074 ms MarkObjects: 6.193211 ms  DeleteObjects: 4.186843 ms)
+
+False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+game saved
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+WeltenseelePlayerPos Position saved: (980.0, 1.0, 972.0)
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+WeltenseelePlayerPos Position saved: (979.0, 0.0, 981.4)
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 1.287439 ms
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2466)
+
+HDR RenderTexture format is not supported on this platform. This camera will render without HDR buffers.
+ 
+(Filename:  Line: 2468)
+
+stadtlevel2 Player X SpawPoint: 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+newPos: (-3.6, 0.3, -31.4)
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+game saved
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+stadtlevel2PlayerPos Position saved: (-3.6, 1.3, -31.4)
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+stadtlevel2PlayerRotX  Gespeicherte Position.  (-3.6, 0.3, -31.4)
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1904.
+Total: 10.814728 ms (FindLiveObjects: 0.133836 ms CreateObjectMapping: 0.073432 ms MarkObjects: 6.518328 ms  DeleteObjects: 2.850843 ms)
+
+False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+game saved
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+stadtlevel2PlayerPos Position saved: (-3.6, 1.3, -31.4)
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+180
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Zirkel getriggert.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+jump height saved
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+game saved
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+stadtlevel2PlayerPos Position saved: (8.6, 45.8, -102.8)
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Message: 
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Zirkel getriggert.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Zirkel getriggert.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Zirkel getriggert.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Zirkel getriggert.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+

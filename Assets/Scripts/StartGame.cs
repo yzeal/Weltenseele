@@ -5,7 +5,7 @@ using  UnityEngine.UI;
 
 public class StartGame : MonoBehaviour {
 
-	public string startLevel = "stadt";
+	public string startLevel = "stadtlevel2";
 
 	public GameObject fortsetzenButton;
 	public GameObject startButton;
@@ -23,7 +23,7 @@ public class StartGame : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-//		Application.LoadLevel("stadt");
+//		Application.LoadLevel("stadtlevel2");
 		if(PlayerPrefs.GetInt("safeGame") == 0){
 			fortB = fortsetzenButton.GetComponent<Button>();
 			eS.SetSelectedGameObject(startButton);
