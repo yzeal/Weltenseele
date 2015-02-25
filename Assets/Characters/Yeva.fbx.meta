@@ -167,7 +167,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: .150000006
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -553,317 +553,317 @@ ModelImporter:
       scale: {x: .706991613, y: .706991613, z: .706991613}
       transformModified: 1
     - name: Armature|Root
-      position: {x: 6.07594595e-13, y: .00394938048, z: .0886546969}
+      position: {x: 9.11391934e-11, y: .592407107, z: 13.2982044}
       rotation: {x: -.000510216691, y: 5.82076679e-11, z: 2.80167392e-08, w: .999999881}
       scale: {x: 1, y: 1.00000012, z: .999999821}
       transformModified: 1
     - name: Armature|Hips
-      position: {x: 4.57461152e-12, y: -.000637492398, z: .00770243816}
+      position: {x: 6.86191715e-10, y: -.0956238583, z: 1.15536582}
       rotation: {x: 2.66207337e-07, y: .735691309, z: -.677317083, w: -3.4770656e-07}
       scale: {x: 1, y: 1.00000024, z: .999999881}
       transformModified: 1
     - name: Armature|Ribs
-      position: {x: 9.70995395e-10, y: 9.95419541e-05, z: -.00121776364}
+      position: {x: 1.4564931e-07, y: .0149312932, z: -.182664558}
       rotation: {x: .989126682, y: -8.40329193e-08, z: 2.07837914e-07, w: .147066206}
       scale: {x: 1, y: .999999821, z: .999995887}
       transformModified: 1
     - name: Armature|Chest
-      position: {x: -7.06101806e-16, y: .006476718, z: 7.45058015e-10}
+      position: {x: -1.05915277e-13, y: .971507728, z: 1.11758695e-07}
       rotation: {x: .268388838, y: 3.47725376e-07, z: -9.98367256e-09, w: .963310659}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Armature|Neck
-      position: {x: -1.52249019e-10, y: .0304064713, z: 8.881784e-18}
+      position: {x: -2.28373533e-08, y: 4.56097078, z: 1.33226752e-15}
       rotation: {x: .0184028205, y: 1.51214385e-09, z: 4.34729408e-09, w: .999830663}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Armature|Head
-      position: {x: 4.4408921e-16, y: .0102583077, z: 4.44089183e-17}
+      position: {x: 6.66133815e-14, y: 1.53874612, z: 6.6613373e-15}
       rotation: {x: -3.37680772e-09, y: .991560519, z: -.129644737, w: 3.17029844e-07}
       scale: {x: 1, y: 1.0000006, z: 1}
       transformModified: 1
     - name: Armature|Jaw
-      position: {x: 7.48390794e-10, y: .00336828083, z: .00423713773}
+      position: {x: 1.12258618e-07, y: .505242109, z: .635570645}
       rotation: {x: .821206689, y: -2.72633525e-08, z: -1.99313703e-07, w: .570630908}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Armature|Lower_Lip
-      position: {x: -6.01841632e-10, y: .00783718284, z: -.00199585385}
+      position: {x: -9.02762451e-08, y: 1.1755774, z: -.299378097}
       rotation: {x: -.0371479578, y: -3.58954622e-07, z: -1.00964286e-08, w: .999309778}
       scale: {x: 1, y: 1.00000012, z: .99999994}
       transformModified: 1
     - name: Armature|Center_Upper_Lip
-      position: {x: 2.12299001e-09, y: .00216241693, z: .0117921531}
+      position: {x: 3.18448485e-07, y: .324362546, z: 1.76882291}
       rotation: {x: 1.98392058e-07, y: .800704062, z: .599060118, w: 5.41409406e-08}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Armature|Left_Upper_Lip
-      position: {x: 2.12244111e-09, y: .00216241693, z: .0117921531}
+      position: {x: 3.18366148e-07, y: .324362546, z: 1.76882291}
       rotation: {x: -.186109632, y: .782842219, z: .567088902, w: .175873756}
       scale: {x: 1, y: .999999762, z: 1.00000012}
       transformModified: 1
     - name: Armature|Right_Upper_Lip
-      position: {x: 2.12299001e-09, y: .00216241693, z: .0117921531}
+      position: {x: 3.18448485e-07, y: .324362546, z: 1.76882291}
       rotation: {x: .186109483, y: .782842219, z: .567088902, w: -.175873563}
       scale: {x: 1.00000012, y: 1.00000048, z: 1.00000012}
       transformModified: 1
     - name: Armature|Left_Lip
-      position: {x: 2.12299001e-09, y: .00216241693, z: .0117921531}
+      position: {x: 3.18448485e-07, y: .324362546, z: 1.76882291}
       rotation: {x: -.512910545, y: .483318239, z: .518063724, w: .4847022}
       scale: {x: 1, y: 1, z: 1.00000012}
       transformModified: 1
     - name: Armature|Right_Lip
-      position: {x: 2.12244111e-09, y: .00216241693, z: .0117921531}
+      position: {x: 3.18366148e-07, y: .324362546, z: 1.76882291}
       rotation: {x: .51291132, y: .483317494, z: .518064439, w: -.484701365}
       scale: {x: 1, y: 1, z: 1.00000012}
       transformModified: 1
     - name: Armature|Right_Brow_02
-      position: {x: 8.50776116e-10, y: .0113104647, z: .00505310204}
+      position: {x: 1.27616431e-07, y: 1.6965698, z: .757965326}
       rotation: {x: .266543567, y: -.358930051, z: -.615551054, w: .649015129}
       scale: {x: 1, y: 1.00000024, z: 1}
       transformModified: 1
     - name: Armature|Left_Brow_02
-      position: {x: 8.51324844e-10, y: .0113104647, z: .00505310204}
+      position: {x: 1.27698726e-07, y: 1.6965698, z: .757965326}
       rotation: {x: .266543746, y: .35893023, z: .615550995, w: .649015009}
       scale: {x: 1.00000012, y: 1.00000024, z: 1}
       transformModified: 1
     - name: Armature|Right_Brow_01
-      position: {x: 8.50776116e-10, y: .0113104647, z: .00505310204}
+      position: {x: 1.27616431e-07, y: 1.6965698, z: .757965326}
       rotation: {x: -.00798618421, y: .683533132, z: .654220939, w: -.323594928}
       scale: {x: .999999881, y: 1.00000012, z: .999999821}
       transformModified: 1
     - name: Armature|Left_Brow_01
-      position: {x: 8.51324844e-10, y: .0113104647, z: .00505310204}
+      position: {x: 1.27698726e-07, y: 1.6965698, z: .757965326}
       rotation: {x: .00798611064, y: .683533192, z: .654220879, w: .323594868}
       scale: {x: 1, y: .999999583, z: .999999881}
       transformModified: 1
     - name: Armature|Right_Shoulder_Joint
-      position: {x: -1.52249019e-10, y: .0304064713, z: 8.881784e-18}
+      position: {x: -2.28373533e-08, y: 4.56097078, z: 1.33226752e-15}
       rotation: {x: -.501619577, y: .586619675, z: .522038996, w: .362946957}
       scale: {x: 1.00000024, y: 1, z: 1}
       transformModified: 1
     - name: Armature|Right_Upper_Arm_Joint
-      position: {x: 1.19209287e-09, y: .0179910287, z: 1.74716117e-08}
+      position: {x: 1.7881392e-07, y: 2.69865441, z: 2.62074172e-06}
       rotation: {x: .0529058911, y: .0158688221, z: -.0972843915, w: .993722737}
       scale: {x: .999999762, y: .999999702, z: 1}
       transformModified: 1
     - name: Armature|Right_Forearm_Joint
-      position: {x: 1.63912772e-09, y: .021025734, z: -3.69735065e-09}
+      position: {x: 2.4586916e-07, y: 3.15386009, z: -5.54602593e-07}
       rotation: {x: -.0400983244, y: -.671700299, z: -.00888835452, w: .739683688}
       scale: {x: .99999994, y: 1, z: 1.00000012}
       transformModified: 1
     - name: Armature|Right_Wrist_Joint
-      position: {x: 8.19563883e-09, y: .0232062694, z: -8.94069652e-10}
+      position: {x: 1.2293458e-06, y: 3.48094034, z: -1.34110437e-07}
       rotation: {x: -.0189929958, y: -.0805364773, z: .0345150605, w: .995972812}
       scale: {x: .99999994, y: 1, z: .99999994}
       transformModified: 1
     - name: Armature|Right_Index_Finger_Joint_01
-      position: {x: 4.0928524e-05, y: .00992820878, z: -.00206037425}
+      position: {x: .00613927888, y: 1.48923135, z: -.309056163}
       rotation: {x: -.0283803493, y: .00419071084, z: -.046564471, w: .998503268}
       scale: {x: 1.00000012, y: 1, z: .999999881}
       transformModified: 1
     - name: Armature|Right_Index_Finger_Joint_02
-      position: {x: 7.45989404e-09, y: .00324256625, z: 2.23517413e-10}
+      position: {x: 1.11898419e-06, y: .486384988, z: 3.35276091e-08}
       rotation: {x: .0212143362, y: -.00478479778, z: .142010078, w: .989626288}
       scale: {x: 1, y: .99999994, z: 1}
       transformModified: 1
     - name: Armature|Right_Thumb_01
-      position: {x: -.00104070536, y: .00506648328, z: -.00338526117}
+      position: {x: -.156105801, y: .759972572, z: -.507789135}
       rotation: {x: -.359140664, y: -.0341681875, z: .0784393102, w: .929353416}
       scale: {x: 1.00000012, y: 1, z: .999999881}
       transformModified: 1
     - name: Armature|Right_Thumb_02
-      position: {x: -2.53319743e-09, y: .00317556364, z: 5.96046434e-10}
+      position: {x: -3.7997961e-07, y: .476334572, z: 8.94069601e-08}
       rotation: {x: .0936823487, y: .758180439, z: -.122227296, w: .633598089}
       scale: {x: 1.00000012, y: 1, z: 1.00000012}
       transformModified: 1
     - name: Armature|Right_Middle_Finger_Joint_01
-      position: {x: 5.52630227e-05, y: .0101076895, z: -.000160875687}
+      position: {x: .00828945357, y: 1.51615334, z: -.0241313539}
       rotation: {x: .0230129994, y: .00518422108, z: -.0763840601, w: .996799409}
       scale: {x: .999999881, y: .99999994, z: .999999821}
       transformModified: 1
     - name: Armature|Right_Middle_Finger_Joint_02
-      position: {x: -8.58679439e-09, y: .00387543719, z: -1.49011609e-10}
+      position: {x: -1.28801923e-06, y: .581315637, z: -2.235174e-08}
       rotation: {x: -.00267196819, y: .00157980085, z: .165225461, w: .986250937}
       scale: {x: .999999762, y: .99999994, z: .999999821}
       transformModified: 1
     - name: Armature|Right_Ring_Finger_Joint_01
-      position: {x: 2.82400833e-05, y: .00994642638, z: .00191076542}
+      position: {x: .0042360127, y: 1.49196398, z: .286614835}
       rotation: {x: .0598039404, y: .00293558137, z: -.0220342875, w: .997962594}
       scale: {x: 1, y: 1, z: 1.00000012}
       transformModified: 1
     - name: Armature|Right_Ring_Finger_Joint_02
-      position: {x: -1.35973091e-08, y: .00319635286, z: -2.98023217e-10}
+      position: {x: -2.03959644e-06, y: .479452908, z: -4.470348e-08}
       rotation: {x: -.000421760458, y: .0106260832, z: .030682357, w: .999472618}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Armature|Right_Pinky_Finger_Joint_01
-      position: {x: .000428967702, y: .00922760367, z: .00390721019}
+      position: {x: .0643451512, y: 1.38414049, z: .586081505}
       rotation: {x: .0736367106, y: .00284252688, z: .00105110102, w: .997280538}
       scale: {x: .999999881, y: .999999881, z: 1}
       transformModified: 1
     - name: Armature|Right_Pinky_Finger_Joint_02
-      position: {x: 5.02914155e-10, y: .00228738389, z: 0}
+      position: {x: 7.54371214e-08, y: .343107581, z: 0}
       rotation: {x: -.0332867652, y: .0119475937, z: .059497457, w: .997601807}
       scale: {x: 1.00000012, y: 1, z: 1}
       transformModified: 1
     - name: Armature|Left_Shoulder_Joint
-      position: {x: 3.90798503e-16, y: .0304064713, z: 5.77315952e-17}
+      position: {x: 5.86197757e-14, y: 4.56097078, z: 8.65973959e-15}
       rotation: {x: .501619458, y: .586619616, z: .522039235, w: -.362946779}
       scale: {x: 1.00000024, y: 1.00000036, z: 1}
       transformModified: 1
     - name: Armature|Left_Upper_Arm_Joint
-      position: {x: -0, y: .0179910269, z: 9.90927163e-09}
+      position: {x: -0, y: 2.69865417, z: 1.48639083e-06}
       rotation: {x: .0529058948, y: -.0158689506, z: .0972844139, w: .993722737}
       scale: {x: .999999762, y: .999999702, z: .99999994}
       transformModified: 1
     - name: Armature|Left_Forearm_Joint
-      position: {x: -7.45058015e-10, y: .0210257359, z: -4.44240866e-09}
+      position: {x: -1.11758695e-07, y: 3.15386009, z: -6.66361302e-07}
       rotation: {x: -.040098317, y: .671700299, z: .00888833683, w: .739683628}
       scale: {x: .999999821, y: 1, z: 1.00000012}
       transformModified: 1
     - name: Armature|Left_Wrist_Joint
-      position: {x: 1.19209287e-09, y: .0232062694, z: -1.19209287e-09}
+      position: {x: 1.7881392e-07, y: 3.48094034, z: -1.7881392e-07}
       rotation: {x: -.0189929903, y: .0805364996, z: -.034515053, w: .995972812}
       scale: {x: .999999821, y: 1, z: .999999821}
       transformModified: 1
     - name: Armature|Left_Index_Finger_Joint_01
-      position: {x: -4.09191198e-05, y: .00992820878, z: -.00206037634}
+      position: {x: -.00613786792, y: 1.48923135, z: -.309056431}
       rotation: {x: -.0283803474, y: -.00419072015, z: .0465644635, w: .998503268}
       scale: {x: 1.00000012, y: .99999994, z: .999999881}
       transformModified: 1
     - name: Armature|Left_Index_Finger_Joint_02
-      position: {x: -7.40401429e-09, y: .00324256462, z: -4.47034826e-10}
+      position: {x: -1.11060217e-06, y: .48638469, z: -6.70552183e-08}
       rotation: {x: .0212143436, y: .00478479872, z: -.142010078, w: .989626288}
       scale: {x: .99999994, y: .999999881, z: 1}
       transformModified: 1
     - name: Armature|Left_Thumb_01
-      position: {x: .00104071421, y: .00506648328, z: -.00338526303}
+      position: {x: .156107128, y: .759972572, z: -.507789493}
       rotation: {x: -.359142303, y: .0341666937, z: -.0784411132, w: .92935276}
       scale: {x: .99999994, y: .99999994, z: .999999762}
       transformModified: 1
     - name: Armature|Left_Thumb_02
-      position: {x: -1.63912772e-09, y: .00317556737, z: 1.19209287e-09}
+      position: {x: -2.4586916e-07, y: .476335108, z: 1.7881392e-07}
       rotation: {x: .0936823636, y: -.758180439, z: .122227274, w: .633598089}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Armature|Left_Middle_Finger_Joint_01
-      position: {x: -5.52536439e-05, y: .0101076849, z: -.000160876516}
+      position: {x: -.00828804635, y: 1.51615286, z: -.0241314769}
       rotation: {x: .0230129994, y: -.0051842276, z: .0763840601, w: .996799409}
       scale: {x: .999999881, y: .99999994, z: .999999821}
       transformModified: 1
     - name: Armature|Left_Middle_Finger_Joint_02
-      position: {x: -3.16649679e-10, y: .00387544883, z: -1.7881393e-09}
+      position: {x: -4.74974513e-08, y: .581317365, z: -2.68220873e-07}
       rotation: {x: -.00267196866, y: -.00157980388, z: -.165225461, w: .986250937}
       scale: {x: .999999881, y: 1.00000012, z: .999999881}
       transformModified: 1
     - name: Armature|Left_Ring_Finger_Joint_01
-      position: {x: -2.82307428e-05, y: .00994642079, z: .00191076309}
+      position: {x: -.00423461106, y: 1.49196315, z: .286614478}
       rotation: {x: .0598039404, y: -.00293558976, z: .0220342819, w: .997962594}
       scale: {x: 1, y: 1.00000012, z: 1.00000012}
       transformModified: 1
     - name: Armature|Left_Ring_Finger_Joint_02
-      position: {x: 4.74974504e-09, y: .00319635542, z: 2.98023217e-10}
+      position: {x: 7.1246177e-07, y: .479453325, z: 4.470348e-08}
       rotation: {x: -.000421761215, y: -.0106260842, z: -.0306823589, w: .999472618}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: Armature|Left_Pinky_Finger_Joint_01
-      position: {x: -.000428959, y: .00922759995, z: .00390720693}
+      position: {x: -.0643438473, y: 1.38414001, z: .586081028}
       rotation: {x: .0736373961, y: -.00284274784, z: -.00105268613, w: .997280478}
       scale: {x: 1, y: 1, z: 1.00000012}
       transformModified: 1
     - name: Armature|Left_Pinky_Finger_Joint_02
-      position: {x: -1.05239453e-08, y: .00228738319, z: 0}
+      position: {x: -1.57859176e-06, y: .343107492, z: 0}
       rotation: {x: -.0332867689, y: -.0119475937, z: -.059497457, w: .997601807}
       scale: {x: .99999994, y: 1, z: .999999881}
       transformModified: 1
     - name: Armature|Right_Thigh_Joint
-      position: {x: .00968132261, y: 3.16977253e-06, z: -2.90943763e-06}
+      position: {x: 1.45219839, y: .000475465844, z: -.000436415605}
       rotation: {x: .0268749483, y: .709975481, z: -.703275204, w: .0248309113}
       scale: {x: .99999994, y: .999999821, z: .99999994}
       transformModified: 1
     - name: Armature|Right_Knee_Joint
-      position: {x: -8.45175208e-10, y: .0424077921, z: -6.98491889e-11}
+      position: {x: -1.26776285e-07, y: 6.36116886, z: -1.04773781e-08}
       rotation: {x: .0348000117, y: .998576343, z: -.0404243134, w: -.000348967791}
       scale: {x: .999999881, y: 1.00000012, z: .999999881}
       transformModified: 1
     - name: Armature|Right_Ankle_Joint
-      position: {x: 2.53785409e-10, y: .0425682478, z: 2.42143861e-10}
+      position: {x: 3.80678138e-08, y: 6.38523769, z: 3.63215804e-08}
       rotation: {x: -.677486539, y: .00984798372, z: -.00047805655, w: .735469103}
       scale: {x: .99999994, y: .999999881, z: .999999762}
       transformModified: 1
     - name: Armature|Right_Toe_Joint
-      position: {x: -7.97444943e-10, y: .0087542329, z: 1.02445483e-10}
+      position: {x: -1.19616743e-07, y: 1.31313491, z: 1.53668225e-08}
       rotation: {x: -.030008724, y: -.0088099828, z: .00552175241, w: .999495566}
       scale: {x: .999999821, y: .999999702, z: .999999821}
       transformModified: 1
     - name: Armature|Left_Thigh_Joint
-      position: {x: -.00968132261, y: 3.17085755e-06, z: -2.90943944e-06}
+      position: {x: -1.45219839, y: .000475628651, z: -.000436415925}
       rotation: {x: -.0268749427, y: .709975481, z: -.703275204, w: -.0248309169}
       scale: {x: .99999994, y: .999999821, z: .99999994}
       transformModified: 1
     - name: Armature|Left_Knee_Joint
-      position: {x: 3.64379943e-10, y: .0424077921, z: 2.86381696e-10}
+      position: {x: 5.46569936e-08, y: 6.36116886, z: 4.29572538e-08}
       rotation: {x: -.0348000079, y: .998576343, z: -.0404243208, w: .000348848582}
       scale: {x: .999999881, y: 1.00000012, z: .999999881}
       transformModified: 1
     - name: Armature|Left_Ankle_Joint
-      position: {x: -1.52504065e-10, y: .0425682478, z: 4.3350154e-10}
+      position: {x: -2.28756107e-08, y: 6.38523769, z: 6.50252332e-08}
       rotation: {x: -.677486479, y: -.00984798372, z: .000478057482, w: .735469162}
       scale: {x: .99999994, y: .999999881, z: .999999762}
       transformModified: 1
     - name: Armature|Left_Toe_Joint
-      position: {x: 8.15489287e-10, y: .00875423197, z: 1.02445483e-10}
+      position: {x: 1.22323385e-07, y: 1.31313479, z: 1.53668225e-08}
       rotation: {x: -.030008724, y: .00880998466, z: -.00552175287, w: .999495566}
       scale: {x: .999999821, y: .999999702, z: .999999821}
       transformModified: 1
     - name: Camera
-      position: {x: -.074811317, y: .0534366518, z: .0650763959}
+      position: {x: -11.2216969, y: 8.01549721, z: 9.76145935}
       rotation: {x: .210611343, y: .905240178, z: -.0892816931, w: -.358066887}
       scale: {x: 1, y: .999999881, z: .99999994}
       transformModified: 1
     - name: Haare
-      position: {x: 2.19199308e-07, y: .00772701344, z: .156922445}
+      position: {x: 3.28798997e-05, y: 1.15905213, z: 23.5383663}
       rotation: {x: .707106888, y: 0, z: 0, w: .707106769}
       scale: {x: 1.35841167, y: 1.35841167, z: 1.35841167}
       transformModified: 1
     - name: Hemd
-      position: {x: 0, y: 0, z: .10991767}
+      position: {x: 0, y: 0, z: 16.487648}
       rotation: {x: 0, y: -0, z: 0, w: 1}
       scale: {x: 1.41444397, y: 1.41444397, z: 1.41444397}
       transformModified: 1
     - name: Hose
-      position: {x: 0, y: 0, z: .10991767}
+      position: {x: 0, y: 0, z: 16.487648}
       rotation: {x: 0, y: -0, z: 0, w: 1}
       scale: {x: 1.41444397, y: 1.41444397, z: 1.41444397}
       transformModified: 1
     - name: K__rper
-      position: {x: 0, y: 0, z: .10991767}
+      position: {x: 0, y: 0, z: 16.487648}
       rotation: {x: 0, y: -0, z: 0, w: 1}
       scale: {x: 1.41444397, y: 1.41444397, z: 1.41444397}
       transformModified: 1
     - name: Lamp
-      position: {x: -.0552774705, y: .237733111, z: .0211831331}
+      position: {x: -8.29162025, y: 35.6599655, z: 3.17746997}
       rotation: {x: .295574546, y: -.284725219, z: .123691298, w: .903475404}
       scale: {x: 1, y: .99999994, z: .99999994}
       transformModified: 1
     - name: Lamp.001
-      position: {x: -.0552774705, y: .237733111, z: .0211831331}
+      position: {x: -8.29162025, y: 35.6599655, z: 3.17746997}
       rotation: {x: .903475285, y: .12369141, z: .284725428, w: -.295574546}
       scale: {x: .99999994, y: .999999881, z: 1}
       transformModified: 1
     - name: Schuhe
-      position: {x: 0, y: 0, z: .10991767}
+      position: {x: 0, y: 0, z: 16.487648}
       rotation: {x: 0, y: -0, z: 0, w: 1}
       scale: {x: 1.41444397, y: 1.41444397, z: 1.41444397}
       transformModified: 1
     - name: Weste
-      position: {x: 0, y: 0, z: .10991767}
+      position: {x: 0, y: 0, z: 16.487648}
       rotation: {x: 0, y: -0, z: 0, w: 1}
       scale: {x: 1.41444397, y: 1.41444397, z: 1.41444397}
       transformModified: 1
     - name: zopf
-      position: {x: 1.55159396e-05, y: .00687293708, z: .15412569}
+      position: {x: .00232739095, y: 1.03094053, z: 23.1188545}
       rotation: {x: .684850574, y: .0579601638, z: .723787725, w: .0612506382}
       scale: {x: 1.96442568, y: 1.96442568, z: 1.96442604}
       transformModified: 1
