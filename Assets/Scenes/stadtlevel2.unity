@@ -1955,7 +1955,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 497726, guid: 9fb97aad6b4615c43ad6044a6b1c8cc0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 19.3999996
+      value: 17.5300007
       objectReference: {fileID: 0}
     - target: {fileID: 497726, guid: 9fb97aad6b4615c43ad6044a6b1c8cc0, type: 2}
       propertyPath: m_LocalPosition.y
@@ -7578,7 +7578,7 @@ Transform:
   m_PrefabInternal: {fileID: 788727034}
   m_GameObject: {fileID: 645769921}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: 20.5, y: 27, z: -13.6999998}
+  m_LocalPosition: {x: 18.3500004, y: 27, z: -13.6999998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2124545071}
@@ -7984,6 +7984,10 @@ Renderer:
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: 594d0bb2fb5ad434e86b9cc84e6aa023, type: 2}
+  - {fileID: 2100000, guid: befe092f599dddd42a2f8a6337966351, type: 2}
+  - {fileID: 2100000, guid: c52e761a1c588c64a8f5783423b08c60, type: 2}
+  - {fileID: 2100000, guid: 7321ce59e414f2c4db6c870701fd2c18, type: 2}
+  - {fileID: 2100000, guid: ae126a038891ed840bb347f573c9d287, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -9161,7 +9165,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 463274, guid: 4f33bb0a195cc834ea2a862aaebdfa5c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 20.5
+      value: 18.3500004
       objectReference: {fileID: 0}
     - target: {fileID: 463274, guid: 4f33bb0a195cc834ea2a862aaebdfa5c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -12148,7 +12152,7 @@ Transform:
   m_PrefabInternal: {fileID: 156911181}
   m_GameObject: {fileID: 1017751523}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: 19.3999996, y: 27, z: -20.7000008}
+  m_LocalPosition: {x: 17.5300007, y: 27, z: -20.7000008}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1667659932}
@@ -17336,15 +17340,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 01503eff90d604646b48bfc350cea032, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 29.086731
+      value: 29.1000004
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 01503eff90d604646b48bfc350cea032, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -45.3734741
+      value: -68.3000031
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 01503eff90d604646b48bfc350cea032, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.8407288
+      value: -12.8000002
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 01503eff90d604646b48bfc350cea032, type: 3}
       propertyPath: m_LocalRotation.x
@@ -18267,7 +18271,7 @@ Transform:
   m_PrefabInternal: {fileID: 1445174152}
   m_GameObject: {fileID: 1559064194}
   m_LocalRotation: {x: 0, y: -0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.086731, y: -45.3734741, z: -12.8407288}
+  m_LocalPosition: {x: 29.1000004, y: -68.3000031, z: -12.8000002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1570604618}
@@ -20769,10 +20773,6 @@ Renderer:
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: db760d1d3df81c04da22298995ed6edc, type: 2}
-  - {fileID: 2100000, guid: befe092f599dddd42a2f8a6337966351, type: 2}
-  - {fileID: 2100000, guid: c52e761a1c588c64a8f5783423b08c60, type: 2}
-  - {fileID: 2100000, guid: 7321ce59e414f2c4db6c870701fd2c18, type: 2}
-  - {fileID: 2100000, guid: e97b9bbc002719a44bf886775e778a00, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
